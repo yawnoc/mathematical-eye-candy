@@ -74,3 +74,35 @@ Combining all four pieces, we get
       \sin \left( \frac{m \pi y}{a} \right) \frac{Y(x) + Y(a - x)}{Y(a)}
     \right).
 ```
+
+### Scaling
+
+For more wieldiness, we put
+
+```math
+\begin{align}
+  & u = u_0 u', \quad v = u_0 v' \\
+  & x = a x', \quad y = a y' \\
+  & \omega/c = (\pi/a) \omega' \\
+  & c t = a t',
+\end{align}
+```
+
+and the solution becomes
+
+```math
+  v' =
+    \sum_{\substack{m = 1 \\ \text{$m$ odd}}}^\infty
+    \frac{4}{m \pi}
+    \left(
+      \sin(m \pi x') \frac{Y'(y') + Y'(1 - y')}{Y'(1)}
+        +
+      \sin(m \pi y') \frac{Y'(x') + Y'(1 - x')}{Y'(1)}
+    \right),
+```
+
+where
+
+```math
+  Y'(y') = \sinh \left( \sqrt{m^2 - {\omega'}^2} \cdot \pi y' \right).
+```
