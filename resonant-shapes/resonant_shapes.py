@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy import sin, pi
 
-GRID_SIZE = 5
+GRID_SIZE = 7
 SAMPLING_STEP = 1/100
-FIGURE_INCHES = 5
+FIGURE_INCHES = 7
 
 
 def xi_level(x, y, m, n):
