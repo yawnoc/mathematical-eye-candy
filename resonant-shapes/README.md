@@ -29,10 +29,15 @@ and on the boundary of the square we have oscillation
 
 where $u_0$ is the amplitude and $\omega$ is the angular frequency.
 
-### Oscillations
+### Separation of variables
 
-Putting $u(x, y, t) = v(x, y) \mathrm{e}^{\mathrm{i} \omega t}$ to seek oscillations,
-we have in the interior
+Putting
+
+```math
+  u(x, y, t) = v(x, y) \mathrm{e}^{\mathrm{i} \omega t}
+```
+
+to seek oscillations, we have in the interior
 
 ```math
   \frac{\partial^2 v}{{\partial x}^2}
@@ -49,7 +54,7 @@ and on the boundary
 
 By linearity we may break $v$ into four pieces, each of which has $v = u_0$
 on one of the sides of the square individually.
-Following the usual separation of variables, we find that the piece
+Following the usual separation of variables in $x$ and $y$, we find that the piece
 with $v = u_0$ along the top side $y = a$ is given by
 
 ```math
@@ -113,7 +118,7 @@ where
 \end{align}
 ```
 
-### Resonance
+### Resonant frequency
 
 A necessary condition for resonance is that the common denominator $\hat{Y}(1)$ vanishes,
 i.e.
@@ -162,3 +167,29 @@ Hence we have resonance if and only if
 ```
 
 See <<https://oeis.org/A097269>>.
+
+### Resonant amplitude
+
+To see the form of the amplitude increase during resonance,
+we make a change the change of coordinates to the new dependent variable
+
+```math
+\begin{align}
+  \xi(x, y, t)
+  &= u(x, y, t) - u_0 \mathrm{e}^{\mathrm{i} \omega t}, \\
+  &= (v(x, y) - u_0) \mathrm{e}^{\mathrm{i} \omega t}
+\end{align}
+```
+
+or, in scaled terms (with $\xi = u_0 \hat{\xi}$),
+
+```math
+  \hat{\xi}(\hat{x}, \hat{y}, \hat{t})
+  = (\hat{v}(\hat{x}, \hat{y}) - 1) \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}},
+```
+
+so that the non-homogeneity is moved from the oscillating boundary condition
+into an oscillating forcing term in the field equation.
+That is, in the interior of the square we have
+an inhomogeneous wave equation in $\hat{\xi}$ (with a complex exponential forcing term),
+and on the boundary of the square we simply have $\hat{\xi} = 0$.
