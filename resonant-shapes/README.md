@@ -3,7 +3,8 @@
 Here we use solutions to the wave equation for an oscillating square boundary
 to obtain new boundary shapes that have the same resonant frequency.
 
-**Warning: Infinite and infinitesimal quantities are used in this document.**
+**Warning: The following content contains infinite and infinitesimal quantities.**
+Reader discretion is advised.
 
 
 ## Oscillating square solution
@@ -171,7 +172,7 @@ See <<https://oeis.org/A097269>>.
 ### Resonant amplitude
 
 To see the form of the amplitude increase during resonance,
-we make a change the change of coordinates to the new dependent variable
+we make a change of coordinates to the new dependent variable
 
 ```math
 \begin{align}
@@ -223,20 +224,51 @@ we have the particular solution
     \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}
 ```
 
-to be evaluated at $\hat{\omega}^2 = m^2 + (n + \epsilon)^2$, where $\epsilon$ is infinitesimal,
-with discarding of homogeneous terms (i.e. modulo $\mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}$).
+to be evaluated at
+
+```math
+  \hat{\omega}^2 = m^2 + (n + \epsilon)^2,
+```
+
+where $\epsilon$ is infinitesimal, modulo homogeneous terms $\xi_\mathrm{h}$.
 
 In particular,
 
 ```math
+\begin{align}
   \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)} \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}
-  = \frac{\sin((n + \epsilon) \pi \hat{y}) + \sin((n + \epsilon) \pi (1 - \hat{y}))}{\sin((n + \epsilon) \pi)}
+  &=
+    \frac{\sin((n + \epsilon) \pi \hat{y}) + \sin((n + \epsilon) \pi (1 - \hat{y}))}{\sin((n + \epsilon) \pi)}
       \cdot
-    \exp \left(
-      \mathrm{i} \pi \sqrt{m^2 + n^2}
-        \cdot
-      \left( 1 + \frac{n \epsilon}{m^2 + n^2} \right) \hat{t}
+    \exp \left( \mathrm{i} \pi \sqrt{m^2 + (n + \epsilon)^2} \cdot \hat{t} \right) \\
+  &=
+    \left(
+      \frac{-2 \sin(n \pi \hat{y})}{\epsilon \pi}
+      + (1 - 2 \hat{y}) \cos(n \pi \hat{y})
+      - \frac{2 \mathrm{i} n \hat{t} \sin(n \pi \hat{y})}{\sqrt{m^2 + n^2}}
     \right)
+    \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right) \\
+  &\equiv
+    \mathrm{const} \cdot \hat{t} \sin(n \pi \hat{y})
+    \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right)
+    \pmod{\xi_\mathrm{h}},
+\end{align}
 ```
 
-<!-- TODO -->
+wherefore
+
+```math
+  \hat{\xi}_\mathrm{p}
+  \equiv
+    \mathrm{const}
+      \cdot
+    \left(
+      \sin(m \pi \hat{x}) \sin(n \pi \hat{y})
+        +
+      \sin(m \pi \hat{y}) \sin(n \pi \hat{x})
+    \right)
+      \cdot
+    \hat{t}
+    \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right)
+    \pmod{\xi_\mathrm{h}}.
+```
