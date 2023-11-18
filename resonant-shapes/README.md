@@ -265,10 +265,25 @@ wherefore
     \Bigl(
       \sin(m \pi \hat{x}) \sin(n \pi \hat{y})
         +
-      \sin(n \pi \hat{y}) \sin(m \pi \hat{x})
+      \sin(n \pi \hat{x}) \sin(m \pi \hat{y})
     \Bigr)
       \cdot
     \hat{t}
     \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right)
     \pmod{\xi_\mathrm{h}}.
+```
+
+Thus the amplitude increases linearly with time at resonance.
+
+
+## New boundary shapes
+
+To obtain new shapes that share the resonant frequency $\hat{\omega}^2 = m^2 + n^2$,
+simply trace out boundaries along the contours $\hat{\xi}_\mathrm{p} = 0$, i.e.
+
+```math
+  \sin(m \pi \hat{x}) \sin(n \pi \hat{y})
+    +
+  \sin(n \pi \hat{x}) \sin(m \pi \hat{y})
+    = 0.
 ```
