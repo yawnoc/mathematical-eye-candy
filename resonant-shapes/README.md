@@ -190,6 +190,18 @@ or, in scaled terms (with $\xi = u_0 \hat{\xi}$),
 
 so that the non-homogeneity is moved from the oscillating boundary condition
 into an oscillating forcing term in the field equation.
-That is, in the interior of the square we have
-an inhomogeneous wave equation in $\hat{\xi}$ (with a complex exponential forcing term),
-and on the boundary of the square we simply have $\hat{\xi} = 0$.
+That is, in the interior of the square we have the inhomogeneous wave equation
+
+```math
+  \frac{\partial^2 \hat{\xi}}{{\partial \hat{x}}^2}
+  + \frac{\partial^2 \hat{\xi}}{{\partial \hat{y}}^2}
+  - \frac{\partial^2 \hat{\xi}}{{\partial \hat{t}}^2}
+  + \pi^2 \hat{\omega}^2 \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}
+    = 0,
+```
+
+and on the boundary of the square we simply have
+
+```math
+  \hat{\xi} = 0.
+```
