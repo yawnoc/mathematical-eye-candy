@@ -6,7 +6,7 @@ import numpy as np
 from numpy import sin, pi
 
 GRID_SIZE = 5
-PLOT_STEP = 1/30
+PLOT_STEP = 1/100
 FIGURE_INCHES = 5
 
 
