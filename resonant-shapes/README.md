@@ -287,3 +287,9 @@ simply trace out boundaries along the contours $\hat{\xi}_\mathrm{p} = 0$, i.e.
   \sin(n \pi \hat{x}) \sin(m \pi \hat{y})
     = 0.
 ```
+
+- As expected, the contours for $m = n$ (the main diagonal) are simply gridlines.
+- Scaling also makes sense; the contours for $(km, kn)$ comprise $k^2$ copies
+  of the contours for $(m, n)$.
+
+![Grid of contours as m and n run through the odd integers.](resonant-shapes.svg)
