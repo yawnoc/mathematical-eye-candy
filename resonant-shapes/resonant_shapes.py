@@ -1,5 +1,6 @@
 import os
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import sin, pi
@@ -14,6 +15,8 @@ def xi_level(x, y, m, n):
 
 
 def main():
+    mpl.rcParams['svg.hashsalt'] = ''
+
     grid_indices = range(0, GRID_SIZE)
     x_values = np.arange(0, 1, PLOT_STEP)
     y_values = np.arange(0, 1, PLOT_STEP)
@@ -34,7 +37,7 @@ def main():
 
     plt.setp(axs, xticks=[], yticks=[])
     plt.tight_layout()
-    plt.savefig(os.path.join(os.path.dirname(__file__), 'resonant-shapes.svg'))
+    plt.savefig(os.path.join(os.path.dirname(__file__), 'resonant-shapes.svg'), metadata={'Date': None})
 
 
 if __name__ == '__main__':
