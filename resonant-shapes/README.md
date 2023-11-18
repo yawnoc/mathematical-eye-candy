@@ -225,3 +225,18 @@ we have the particular solution
 
 to be evaluated at $\hat{\omega}^2 = m^2 + (n + \epsilon)^2$, where $\epsilon$ is infinitesimal,
 with discarding of homogeneous terms (i.e. modulo $\mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}$).
+
+In particular,
+
+```math
+  \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)} \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}
+  = \frac{\sin((n + \epsilon) \pi \hat{y}) + \sin((n + \epsilon) \pi (1 - \hat{y}))}{\sin((n + \epsilon) \pi)}
+      \cdot
+    \exp \left(
+      \mathrm{i} \pi \sqrt{m^2 + n^2}
+        \cdot
+      \left( 1 + \frac{n \epsilon}{m^2 + n^2} \right) \hat{t}
+    \right)
+```
+
+<!-- TODO -->
