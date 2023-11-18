@@ -1,1 +1,3 @@
-# mathematical-eye-candy
+# Mathematical eye candy
+
+- [Resonant shapes](resonant-shapes/)
