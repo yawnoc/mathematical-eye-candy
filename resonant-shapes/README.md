@@ -104,5 +104,41 @@ so that in dimensionless variables the solution becomes
 where
 
 ```math
-  \hat{Y}(\hat{y}) = \sinh \left( \sqrt{m^2 - {\hat{\omega}}^2} \cdot \pi \hat{y} \right).
+\begin{align}
+  \hat{Y}(\hat{y})
+  &= \sinh \left( \sqrt{m^2 - \hat{\omega}^2} \cdot \pi \hat{y} \right) \\
+  &= \mathrm{i} \sin \left( \sqrt{\hat{\omega}^2 - m^2} \cdot \pi \hat{y} \right).
+\end{align}
 ```
+
+### Resonance
+
+A necessary condition for resonance is that the common denominator $\hat{Y}(1)$ vanishes,
+i.e.
+
+```math
+  \mathrm{i} \sin \left( \sqrt{\hat{\omega}^2 - m^2} \cdot \pi \right) = 0,
+```
+
+and hence that $\hat{\omega}^2 = m^2 + n^2$ for some integer $n$.
+
+If $n$ be even, we have
+
+```math
+  \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)}
+  = \frac{\sin(n \pi \hat{y}) + \sin(n \pi (1 - \hat{y}))}{\sin(n \pi)}
+  = \frac{0}{0},
+```
+
+and upon resolving the indeterminacy (by taking derivatives with respect to $n \pi$)
+this reduces to
+
+```math
+\begin{align}
+  \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)}
+  &= \frac{\hat{y} \cos(n \pi \hat{y}) + (1 - \hat{y}) \cos(n \pi (1 - \hat{y}))}{\cos(n \pi)} \\
+  &= \cos(n \pi \hat{y}),
+\end{align}
+```
+
+which is assuredly finite. Thus there is *no* resonance for even $n$.
