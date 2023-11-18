@@ -3,6 +3,8 @@
 Here we use solutions to the wave equation for an oscillating square boundary
 to obtain new boundary shapes that have the same resonant frequency.
 
+**Warning: Infinite and infinitesimal quantities are used in this document.**
+
 
 ## Oscillating square solution
 
@@ -142,3 +144,21 @@ this reduces to
 ```
 
 which is assuredly finite. Thus there is *no* resonance for even $n$.
+
+If $n$ be odd, we have
+
+```math
+  \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)}
+  = \frac{\sin(n \pi \hat{y}) + \sin(n \pi (1 - \hat{y}))}{\sin(n \pi)}
+  = \frac{2 \sin(n \pi \hat{y})}{\sin(n \pi)},
+```
+
+which is assuredly infinite.
+
+Hence we have resonance if and only if
+
+```math
+  \hat{\omega}^2 = m^2 + n^2, \qquad \text{$m$, $n$ odd}.
+```
+
+See <<https://oeis.org/A097269>>.
