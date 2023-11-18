@@ -292,7 +292,7 @@ The figure below (generated from `resonant_shapes.py`)
 is a grid of contours as $m$ and $n$ run through the odd positive integers.
 
 - As expected, the contours for $m = n$ (the main diagonal) are simply gridlines.
-- Scaling also makes sense; the contours for $(km, kn)$ comprise $k^2$ copies
+- Scaling also makes sense: the contours for $(km, kn)$ comprise $k^2$ copies
   of the contours for $(m, n)$.
 
 ![Grid of contours.](resonant-shapes.svg)
