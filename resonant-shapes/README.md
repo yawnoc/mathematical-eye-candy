@@ -205,3 +205,23 @@ and on the boundary of the square we simply have
 ```math
   \hat{\xi} = 0.
 ```
+
+To obtain a particular solution to the inhomogeneous wave equation at resonance,
+we expand $\hat{v}(\hat{x}, \hat{y}) \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}$ about the resonant frequency.
+Keeping only the terms in the summation pertaining to $\hat{\omega}^2 = m^2 + n^2$,
+we have the particular solution
+
+```math
+  \hat{\xi}_\mathrm{p}
+  =
+    \frac{4}{m \pi}
+    \left(
+      \sin(m \pi \hat{x}) \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)}
+        +
+      \sin(m \pi \hat{y}) \frac{\hat{Y}(\hat{x}) + \hat{Y}(1 - \hat{x})}{\hat{Y}(1)}
+    \right)
+    \mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}
+```
+
+to be evaluated at $\hat{\omega}^2 = m^2 + (n + \epsilon)^2$, where $\epsilon$ is infinitesimal,
+with discarding of homogeneous terms (i.e. modulo $\mathrm{e}^{\mathrm{i} \pi \hat{\omega} \hat{t}}$).
