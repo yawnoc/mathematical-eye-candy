@@ -6,7 +6,7 @@ import numpy as np
 from numpy import sin, pi
 
 GRID_SIZE = 5
-PLOT_STEP = 1/100
+SAMPLING_STEP = 1/100
 FIGURE_INCHES = 5
 
 
@@ -18,8 +18,8 @@ def main():
     mpl.rcParams['svg.hashsalt'] = ''
 
     grid_indices = range(0, GRID_SIZE)
-    x_values = np.arange(0, 1, PLOT_STEP)
-    y_values = np.arange(0, 1, PLOT_STEP)
+    x_values = np.arange(0, 1, SAMPLING_STEP)
+    y_values = np.arange(0, 1, SAMPLING_STEP)
 
     fig, axs = plt.subplots(GRID_SIZE, GRID_SIZE, figsize=(FIGURE_INCHES, FIGURE_INCHES))
 
