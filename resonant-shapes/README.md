@@ -81,28 +81,28 @@ For more wieldiness, we put
 
 ```math
 \begin{align}
-  & u = u_0 u', \quad v = u_0 v' \\
-  & x = a x', \quad y = a y' \\
-  & \omega/c = (\pi/a) \omega' \\
-  & c t = a t',
+  & u = u_0 \hat{u}, \quad v = u_0 \hat{v} \\
+  & x = a \hat{x}, \quad y = a \hat{y} \\
+  & \omega/c = (\pi/a) \hat{\omega} \\
+  & c t = a \hat{t},
 \end{align}
 ```
 
-and the solution becomes
+so that in dimensionless variables the solution becomes
 
 ```math
-  v' =
+  \hat{v} =
     \sum_{\substack{m = 1 \\ \text{$m$ odd}}}^\infty
     \frac{4}{m \pi}
     \left(
-      \sin(m \pi x') \frac{Y'(y') + Y'(1 - y')}{Y'(1)}
+      \sin(m \pi \hat{x}) \frac{\hat{Y}(\hat{y}) + \hat{Y}(1 - \hat{y})}{\hat{Y}(1)}
         +
-      \sin(m \pi y') \frac{Y'(x') + Y'(1 - x')}{Y'(1)}
+      \sin(m \pi \hat{y}) \frac{\hat{Y}(\hat{x}) + \hat{Y}(1 - \hat{x})}{\hat{Y}(1)}
     \right),
 ```
 
 where
 
 ```math
-  Y'(y') = \sinh \left( \sqrt{m^2 - {\omega'}^2} \cdot \pi y' \right).
+  \hat{Y}(\hat{y}) = \sinh \left( \sqrt{m^2 - {\hat{\omega}}^2} \cdot \pi \hat{y} \right).
 ```
