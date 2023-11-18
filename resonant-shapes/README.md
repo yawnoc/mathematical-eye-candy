@@ -288,7 +288,7 @@ simply trace out boundaries along the contours $\hat{\xi}_\mathrm{p} = 0$, i.e.
     = 0.
 ```
 
-The figure below (generated from [`resonant_shapes.py`](resonant_shapes.py))
+The figure below (generated from `resonant_shapes.py`)
 is a grid of contours as $m$ and $n$ run through the odd positive integers.
 
 - As expected, the contours for $m = n$ (the main diagonal) are simply gridlines.
