@@ -262,11 +262,11 @@ wherefore
   \equiv
     \mathrm{const}
       \cdot
-    \left(
+    \Bigl(
       \sin(m \pi \hat{x}) \sin(n \pi \hat{y})
         +
-      \sin(m \pi \hat{y}) \sin(n \pi \hat{x})
-    \right)
+      \sin(n \pi \hat{y}) \sin(m \pi \hat{x})
+    \Bigr)
       \cdot
     \hat{t}
     \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right)
