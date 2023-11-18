@@ -32,7 +32,7 @@ def main():
             zz = xi_level(xx, yy, m, n)
 
             ax = axs[m_index, n_index]
-            ax.contour(xx, yy, zz, levels=[0])
+            ax.contour(xx, yy, zz, levels=[0], colors='black')
             ax.set_aspect('equal')
 
     plt.setp(axs, xticks=[], yticks=[])
