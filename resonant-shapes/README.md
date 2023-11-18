@@ -230,7 +230,7 @@ to be evaluated at
   \hat{\omega}^2 = m^2 + (n + \epsilon)^2,
 ```
 
-where $\epsilon$ is infinitesimal, modulo homogeneous terms $\xi_\mathrm{h}$.
+where $\epsilon$ is infinitesimal, modulo homogeneous terms $\hat{\xi}_\mathrm{h}$.
 
 In particular,
 
@@ -251,7 +251,7 @@ In particular,
   &\equiv
     \mathrm{const} \cdot \hat{t} \sin(n \pi \hat{y})
     \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right)
-    \pmod{\xi_\mathrm{h}},
+    \pmod{\hat{\xi}_\mathrm{h}},
 \end{align}
 ```
 
@@ -270,7 +270,7 @@ wherefore
       \cdot
     \hat{t}
     \exp \left( \mathrm{i} \pi \sqrt{m^2 + n^2} \cdot \hat{t} \right)
-    \pmod{\xi_\mathrm{h}}.
+    \pmod{\hat{\xi}_\mathrm{h}}.
 ```
 
 Thus the amplitude increases linearly with time at resonance.
